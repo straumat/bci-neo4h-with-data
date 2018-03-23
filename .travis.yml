@@ -11,4 +11,4 @@ script:
   - mvn dockerfile:build
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
-  - docker push $DOCKER_USERNAME/bci-ai-runner
+  - docker push $DOCKER_USERNAME/bci-neo4j-docker-with-data
